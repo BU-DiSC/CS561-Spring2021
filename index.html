@@ -33,7 +33,14 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <style>
+        .tech-question 
+        { 
+            display: none !important;
+            /* color: red !important; */
+            font-size: 11pt !important;
+        }
+    </style>
   <script type="text/javascript"> 
       function classDay(d){ 
         var dates = ["January 21","January 23","January 28","January 30","February 4","February 6","February 11","February 13","February 20","February 25","February 27","March 3","March 5","March 17","March 19","March 24","March 26","March 31","April 2","April 7","April 9","April 14","April 16","April 21","April 23","April 28","April 30"]
@@ -415,7 +422,7 @@
                      <ul class="mylist">
                         <li><a target="_blank" style="font-size:18px; text-decoration: underline;" tabindex="-1" href="./student_slides/4.FishStore_BenjaminBorden.pdf" >Discussion Slides by Benjamin Borden</a> </li>
                          <li><strong>(P)</strong> <a href="https://dl.acm.org/doi/10.1145/3299869.3319896">FishStore: Faster Ingestion with Subset Hashing</a>, SIGMOD 2019 (paper for <strong class="red">TECHNICAL QUESTION</strong>) [<a href="https://av.tib.eu/media/42981" target="_blank">conf. present. video</a>]</li>
-                         <li><small><strong>Technical Question:</strong> <em>
+                         <li class="tech-question"><strong>Technical Question:</strong> <em>
                              In order for FISHSTORE to efficiently achieves
                              records within a PSF, it builds an index over the
                              possible items that satisfy the PSF.  However, if
@@ -428,7 +435,7 @@
                              compare to other indexing methods (like an LSM
                              tree) and when might we want to use one over the
                              other?
-                         </em></small></li>
+                         </em></li>
                          <li>(B) <a href="https://dl.acm.org/citation.cfm?id=3196898">FASTER: A Concurrent Key-Value Store with In-Place Updates</a>, SIGMOD 2018 [<a href="https://www.youtube.com/watch?v=68YBpitMrMI" target="_blank">conf. present. video</a>]</li> 
                         </ul>
                      </p>
@@ -486,12 +493,12 @@
                      <ul class="mylist">
                          <li><a target="_blank" style="font-size:18px; text-decoration: underline;" tabindex="-1" href="./student_slides/6.UpBit_DimitrisStaratzis.pdf" >Discussion Slides by Dimitris Staratzis</a> </li>
                          <li><strong>(P)</strong> <a href="https://dl.acm.org/citation.cfm?id=2915964">UpBit: Scalable In-Memory Updatable Bitmap Indexing</a>, SIGMOD 2016 (paper for <strong class="red">TECHNICAL QUESTION</strong>) [<a href="http://cs-people.bu.edu/mathan/publications/slides/nedbday2017-UpBit-public.pdf" target="_blank">conf. slides</a>]</li>
-                         <li><small><strong>Technical Question:</strong> <em>
+                         <li class="tech-question"><strong>Technical Question:</strong> <em>
                              Both UCB and UpBit employ extra bitvector(s) to
                              indicate the corresponding row has been updated,
                              how can UpBit achieve a fast read performance
                              compared to UCB and UpBit-FP?
-                        </em></small></li>
+                        </em></li>
                          <li> (B) <a href="https://dl.acm.org/citation.cfm?id=276336">Bitmap Index Design and Evaluation</a>, SIGMOD 1998</li>
                      </ul>                        
                      </p>
@@ -527,7 +534,7 @@
                     <ul class="mylist">
                         <li><a target="_blank" style="font-size:18px; text-decoration: underline;" tabindex="-1" href="./student_slides/8.AdaptiveIndexing_ManujaDeSilva_MichaelHendrick.pdf" >Discussion Slides by Manuja DeSilva and Michael Hendrink</a> </li>
                         <li><strong>(P)</strong> <a href="https://bigdata.uni-saarland.de/publications/Adaptive_Adaptive_Indexing_ICDE18.pdf">Adaptive Adaptive Indexing</a>, ICDE 2018 (paper for <strong class="red">TECHNICAL QUESTION</strong>) [<a href="https://bigdata.uni-saarland.de/publications/Adaptive_Adaptive_Indexing_ICDE18_slides.pdf" target="_blank">conf. slides</a>]</li>
-                         <li><small><strong>Technical Question:</strong> <em>
+                        <li class="tech-question"><strong>Technical Question:</strong> <em>
                                      In class we have been discussing a lot
                                      about how data layout strategies are
                                      driven by workload knowledge. The authors
@@ -538,7 +545,7 @@
                                      indexing not work well for and why? Can
                                      you think of examples of reads or updates
                                      that would be inefficient in this schema?
-                        </em></small></li>
+                        </em></li>
                         <li> (B) <a href="https://dl.acm.org/citation.cfm?id=1559878">Self-organizing Tuple Reconstruction in Column-stores</a>, SIGMOD 2009</li>
                     </ul>                        
                     </p>
@@ -656,11 +663,11 @@
                      <ul class="mylist">
                          <li><a target="_blank" style="font-size:18px; text-decoration: underline;" tabindex="-1" href="./student_slides/11.PersistentBTrees_TarikulIslamPapon.pdf" >Discussion Slides by Tarikul Islam Papon </a> </li>
                          <li><strong>(P)</strong> <a href="http://www.vldb.org/pvldb/vol8/p786-chen.pdf">Persistent B+-Trees in Non-Volatile Main Memory</a>, VLDB 2015 (paper for <strong class="red">TECHNICAL QUESTION</strong>)</li> 
-                         <li><small><strong>Technical Question:</strong> <em>
+                         <li class="tech-question"><strong>Technical Question:</strong> <em>
                              How can persistent B+-Trees achieve both write
                              atomicity and good search performance while
                              providing consistency after failure?
-                        </em></small></li>
+                        </em></li>
                          <li>(B) <a href="http://cidrdb.org/cidr2011/Papers/CIDR11_Paper3.pdf">Rethinking Database Algorithms for Phase Change Memory</a>, CIDR 2011 </li> 
                          
                      </ul>
@@ -704,13 +711,13 @@
                      <ul class="mylist">
                              <li><a target="_blank" style="font-size:18px; text-decoration: underline;" tabindex="-1" href="./student_slides/12.Slalom_ZiyuShen.pdf">Discussion Slides Ziyu Shen</a> </li>
                              <li><strong>(P)</strong> <a href="http://www.vldb.org/pvldb/vol10/p1106-olma.pdf">Slalom: Coasting Through Raw Data via Adaptive Partitioning and Indexing</a>, VLDB 2017 (paper for <strong class="red">TECHNICAL QUESTION</strong>)</li>
-                             <li><small><strong>Technical Question:</strong> <em>
+                             <li class="tech-question"><strong>Technical Question:</strong> <em>
                                 Slalom does a great job at dynamically assigning partitions and building
                                 indices as new queries are executed on the DBMS. However, the paper does
                                 mention that Slalom's primary usage is in read-heavy and append workloads. As a
                                 result updates are not optimal. What strategies could you devise in order to
                                 improve Slalom's update performance?
-                            </em></small></li>
+                            </em></li>
                          <li> (B) <a href="https://dl.acm.org/citation.cfm?id=2213864">NoDB: Efficient Query Execution on Raw Data Files</a>, SIGMOD 2012</li>
                      </ul>                        
                      </p>
@@ -770,7 +777,7 @@
                      <ul class="mylist">
                          <li><a target="_blank" style="font-size:18px; text-decoration: underline;" tabindex="-1" href="./student_slides/14.VectorH_XiaotongNiu_XiaoyanGe.pdf">Discussion Slides by Xiaotong Niu and Xiaoyan Ge</a> </li>
                          <li><strong>(P)</strong> <a href="https://dl.acm.org/citation.cfm?id=2903742">VectorH: Taking SQL-on-Hadoop to the Next Level</a>, SIGMOD 2016 (paper for <strong class="red">TECHNICAL QUESTION</strong>)</li>
-                         <li><small><strong>Technical Question:</strong> <em>
+                         <li class="tech-question"><strong>Technical Question:</strong> <em>
                             VectorH uses Vectorwise as a springboard to
                             jumpstart its development. In particular, the query
                             optimizer of Vectorwise makes the big assumption
@@ -780,7 +787,7 @@
                             optimizer to work with this new constraint and can
                             you think of how they modeled the new cost? What
                             benefits does VectorH receive from their solution?
-                        </em></small></li>
+                        </em></li>
                          <li> (B) <a href="http://www.vldb.org/pvldb/vol7/p1295-floratou.pdf">SQL-on-Hadoop: Full Circle Back to Shared-Nothing Database Architectures</a>, VLDB 2014</li>
                          <li> (B) <a href="http://www.vldb.org/pvldb/2/vldb09-861.pdf">HadoopDB: An Architectural Hybrid of MapReduce and DBMS Technologies for Analytical Workloads</a>, VLDB 2009</li>
                          <li> (B) <a href="https://dl.acm.org/doi/10.1145/1327452.1327492">MapReduce: simplified data processing on large clusters</a>, CACM 2008</li>
@@ -814,11 +821,11 @@
                      <ul class="mylist">
                          <li><a target="_blank" style="font-size:18px; text-decoration: underline;" tabindex="-1" href="./student_slides/16.FITingTree_ZichenZhu.pdf">Discussion Slides by Zhichen Zhu</a> </li>
                          <li><strong>(P)</strong> <a href="https://dl.acm.org/doi/10.1145/3299869.3319860">FITing-Tree: A Data-aware Index Structure</a>, SIGMOD 2019 (paper for <strong class="red">TECHNICAL QUESTION</strong>) [<a href="https://av.tib.eu/media/42914" target="_blank">conf. present. video</a>]</li>
-                         <li><small><strong>Technical Question:</strong> <em>
+                         <li class="tech-question"><strong>Technical Question:</strong> <em>
                              FITing-Tree only describes the case of insertions.
                              Describe how to support updates and deletes, along
                              with the impacts on performance.
-                         </em></small></li>
+                         </em></li>
                          <li>(B) <a href="https://dl.acm.org/citation.cfm?id=3196909">The Case for Learned Index Structures</a>, SIGMOD 2018 [<a href="https://www.youtube.com/watch?v=MM33CvATm_M" target="_blank">conf. present. video</a>]</li>
                      </ul>                        
                      </p>
