@@ -1,4 +1,2 @@
 # CS561
-
-Website for CAS CS 561: Data Systems Architectures
-
+https://bu-disc.github.io/CS561/
