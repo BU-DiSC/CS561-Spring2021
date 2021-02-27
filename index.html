@@ -496,9 +496,7 @@
                      <ul class="mylist">
                          <!-- <li><a target="_blank" style="font-size:18px; text-decoration: underline;" tabindex="-1" href="./student_slides/6.UpBit_DimitrisStaratzis.pdf" >Discussion Slides by Dimitris Staratzis</a> </li> -->
                          <li><strong>(P)</strong> <a href="https://db.in.tum.de/~leis/papers/ART.pdf">The Adaptive Radix Tree: ARTful Indexing for Main-Memory Databases</a>, ICDE 2013 </li>
-                         <li class="tech-question"><strong>Technical Question:</strong> <em>
-                             TBA
-                        </em></li>
+                         <li class="tech-question"><font color="#cc0000"><strong>Technical Question:</strong></font> <em class="tech-question-text">One primary issue with Radix trees is that- with long keys, the space consumption per key can be significantly large even with the implicit prefix compression of keys. How does ART addresses this issue? In other words, what techniques are used by ART to decrease the height by reducing the number of nodes?</em> </li>
                      </ul>                        
                      </p>
 
@@ -515,10 +513,8 @@
                     <ul class="mylist">
                         <!-- <li><a target="_blank" style="font-size:18px; text-decoration: underline;" tabindex="-1" href="./student_slides/7.SkippingOriented_LinaQui.pdf" >Discussion Slides by Lina Qiu</a> </li> -->
                         <li><strong>(P)</strong> <a href="http://www.vldb.org/pvldb/vol10/p421-sun.pdf">Skipping-oriented Partitioning for Columnar Layouts</a>, VLDB 2016 </li>
+                        <li class="tech-question"><font color="#cc0000"><strong>Technical Question:</strong></font> <em class="tech-question-text">What factors GSOP need to consider when determining the number of features to use for partitioning each column group? How does GSOP determine this optimal number of features?</em> </li>
                         <li> (B) <a href="https://pdfs.semanticscholar.org/6c15/13e2823131a319dbcce4780bdb3e3563c089.pdf">Small Materialized Aggregates: A Light Weight Index for Data Warehousing</a>, VLDB 1998</li>
-                        <li class="tech-question"><strong>Technical Question:</strong> <em>
-                            TBA
-                        </em></li>                        
                     </ul>                        
                     </p>     
 
@@ -537,10 +533,11 @@
                     <ul class="mylist">
                         <!-- <li><a target="_blank" style="font-size:18px; text-decoration: underline;" tabindex="-1" href="./student_slides/8.AdaptiveIndexing_ManujaDeSilva_MichaelHendrick.pdf" >Discussion Slides by Manuja DeSilva and Michael Hendrink</a> </li> -->
                         <li><strong>(P)</strong> <a href="https://bigdata.uni-saarland.de/publications/Adaptive_Adaptive_Indexing_ICDE18.pdf">Adaptive Adaptive Indexing</a>, ICDE 2018 [<a href="https://bigdata.uni-saarland.de/publications/Adaptive_Adaptive_Indexing_ICDE18_slides.pdf" target="_blank">conf. slides</a>]</li>
+                        <li class="tech-question"><font color="#cc0000"><strong>Technical Question:</strong></font> <em class="tech-question-text">The authors of adaptive adaptive indexing show that their technique performs well in multiple generic workloads. What type of workloads would adaptive adaptive indexing not work well for and why? Can you think of examples of reads or updates that would be inefficient in this schema?</em> </li>
                         <li> (B) <a href="https://dl.acm.org/citation.cfm?id=1559878">Self-organizing Tuple Reconstruction in Column-stores</a>, SIGMOD 2009</li>
-                        <li class="tech-question"><strong>Technical Question:</strong> <em>
+                        <!-- <li class="tech-question"><strong>Technical Question:</strong> <em>
                             TBA
-                                     <!-- In class we have been discussing a lot
+                                     In class we have been discussing a lot
                                      about how data layout strategies are
                                      driven by workload knowledge. The authors
                                      of adaptive adaptive indexing go through
@@ -549,8 +546,8 @@
                                      type of workloads would adaptive adaptive
                                      indexing not work well for and why? Can
                                      you think of examples of reads or updates
-                                     that would be inefficient in this schema? -->
-                        </em></li>
+                                     that would be inefficient in this schema?
+                        </em></li> -->
                         </ul>                        
                     </p>
 
@@ -565,14 +562,15 @@
                      <ul class="mylist">
                          <!-- <li><a target="_blank" style="font-size:18px; text-decoration: underline;" tabindex="-1" href="./student_slides/6.UpBit_DimitrisStaratzis.pdf" >Discussion Slides by Dimitris Staratzis</a> </li> -->
                          <li><strong>(P)</strong> <a href="https://dl.acm.org/citation.cfm?id=2915964">UpBit: Scalable In-Memory Updatable Bitmap Indexing</a>, SIGMOD 2016 [<a href="http://cs-people.bu.edu/mathan/publications/slides/nedbday2017-UpBit-public.pdf" target="_blank">conf. slides</a>]</li>
+                         <li class="tech-question"><font color="#cc0000"><strong>Technical Question:</strong></font> <em class="tech-question-text">Both UCB and UpBit employ extra bitvector(s) to indicate the corresponding row has been updated. How can UpBit achieve a fast read performance compared to UCB and UpBit-FP?</em> </li>
                          <li> (B) <a href="https://dl.acm.org/citation.cfm?id=276336">Bitmap Index Design and Evaluation</a>, SIGMOD 1998</li>
-                         <li class="tech-question"><strong>Technical Question:</strong> <em>
+                         <!-- <li class="tech-question"><strong>Technical Question:</strong> <em>
                             TBA
-                            <!-- Both UCB and UpBit employ extra bitvector(s) to
+                            Both UCB and UpBit employ extra bitvector(s) to
                             indicate the corresponding row has been updated,
                             how can UpBit achieve a fast read performance
-                            compared to UCB and UpBit-FP? -->
-                       </em></li>
+                            compared to UCB and UpBit-FP?
+                       </em></li> -->
                     </ul>                        
                      </p>
 
